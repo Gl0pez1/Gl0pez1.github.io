@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granville Lopez - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="logo">Granville Lopez</h1>
+        <h2 id="welcomeMessage" class="welcome-title">Welcome Glopez!</h2>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Dark Mode Toggle Button -->
+        <button onclick="toggleMode()" id="darkModeButton">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <article>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a college graduate who is passionate about making it into the tech industry and becoming a software engineer. With skills in Python, HTML, and CSS, I am currently expanding my knowledge by learning JavaScript. My primary interests lie in artificial intelligence and software development, where I aim to create innovative and impactful solutions. I am committed to continuously improving my technical abilities and achieving my goal of becoming a proficient software engineer.</p>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <h3 class="experience-title">Couch Coder</h3>
+                <h3 class="experience-title">IEUK - Virtual Work Experience Technology</h3>
+                <h3 class="experience-title">IEUK - Virtual Work Experience Finance/Consulting</h3>
+            </section>
+        </article>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="/submit_form" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h1>Granville Lopez Portfolio</h1>
+        <div id="footer-container">
+            <section>
+                <h2>Our Site</h2>
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h2>Important Links</h2>
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+
+    <!-- Include external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
