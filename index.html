@@ -1,80 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Granville Lopez - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Granville Lopez — Portfolio</title>
+  <meta name="description" content="Granville Lopez — aspiring software developer and Level 4 apprenticeship candidate." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Granville Lopez — Portfolio">
+  <meta property="og:description" content="Beginner-friendly projects, skills, and contact." />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gl0pez1.github.io/">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1 id="logo">Granville Lopez</h1>
-        <h2 id="welcomeMessage" class="welcome-title">Welcome Glopez!</h2>
-        <nav role="navigation">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- Dark Mode Toggle Button -->
-        <button onclick="toggleMode()" id="darkModeButton">Toggle Dark Mode</button>
-    </header>
-    <main>
-        <article>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>I am a college graduate who is passionate about making it into the tech industry and becoming a software engineer. With skills in Python, HTML, and CSS, I am currently expanding my knowledge by learning JavaScript. My primary interests lie in artificial intelligence and software development, where I aim to create innovative and impactful solutions. I am committed to continuously improving my technical abilities and achieving my goal of becoming a proficient software engineer.</p>
-            </section>
-            <section id="experience">
-                <h2>Experience</h2>
-                <h3 class="experience-title">Couch Coder</h3>
-                <h3 class="experience-title">IEUK - Virtual Work Experience Technology</h3>
-                <h3 class="experience-title">IEUK - Virtual Work Experience Finance/Consulting</h3>
-            </section>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="logo" href="#top" aria-label="Home">GL</a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-links">
+        ☰
+      </button>
+
+      <ul id="primary-links" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle" class="btn btn-ghost small" type="button" aria-label="Toggle color theme">Theme</button></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="top">
+      <h1>Granville Lopez</h1>
+      <p class="tagline">Aspiring Software Developer — Level 4 Apprentice Candidate</p>
+      <div class="cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn btn-ghost" href="https://github.com/Gl0pez1" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </header>
+
+  <main id="content">
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I’m an aspiring software developer preparing for a Level 4 apprenticeship. I completed an
+        Access to Higher Education Diploma in Computing and I’m building my foundation through
+        self-learning and small projects. I like solving problems, collaborating with others, and
+        turning simple ideas into something useful.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <p class="muted">Honest snapshot of where I am right now.</p>
+      <div class="chips" role="list">
+        <span class="chip" role="listitem">Learning: Python</span>
+        <span class="chip" role="listitem">HTML</span>
+        <span class="chip" role="listitem">CSS</span>
+        <span class="chip" role="listitem">Git & GitHub</span>
+        <span class="chip" role="listitem">Teamwork</span>
+        <span class="chip" role="listitem">Problem-solving</span>
+        <span class="chip" role="listitem">Adaptability</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="muted">Beginner projects that show learning-by-doing.</p>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <div class="card-body">
+            <h3>Personal Portfolio Website (1st Attempt)</h3>
+            <p class="muted">HTML • CSS • GitHub Pages</p>
+            <p>
+              My first ever attempt at building a portfolio website — focused on learning basic
+              HTML structure, simple CSS styling, and deploying through GitHub Pages.
+              This version represents where I started before improving my skills further.
+            </p>
+          </div>
+          <div class="card-actions">
+            <a class="btn" href="https://gl0pez1.github.io/" target="_blank" rel="noopener">View (1st Attempt)</a>
+            <a class="btn btn-ghost" href="https://github.com/Gl0pez1/Gl0pez1.github.io" target="_blank" rel="noopener">Code</a>
+          </div>
         </article>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="/submit_form" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+      </div>
+    </section>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:Granvillelopez7@gmail.com">Granvillelopez7@gmail.com</a></li>
+        <li>Location: London, UK</li>
+      </ul>
+    </section>
+  </main>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Granville Lopez</p>
+  </footer>
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <h1>Granville Lopez Portfolio</h1>
-        <div id="footer-container">
-            <section>
-                <h2>Our Site</h2>
-                <nav role="navigation">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <section>
-                <h2>Important Links</h2>
-                <nav role="navigation">
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </div>
-    </footer>
-
-    <!-- Include external JavaScript file -->
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
